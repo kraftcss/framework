@@ -1,0 +1,27 @@
+{
+  "name": "kraftcss",
+  "version": "0.0.1",
+  "description": "SASS Framework",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node ./lib/postinstall.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kraftcss/framework.git"
+  },
+  "author": "Sean Tymon <tymon148@gmail.com>",
+  "contributors": [
+    "John Perry"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kraftcss/framework/issues"
+  },
+  "homepage": "https://github.com/kraftcss/framework#readme",
+  "devDependencies": {
+    "fs-extra": "^3.0.1",
+    "normalize.css": "^7.0.0"
+  }
+}
