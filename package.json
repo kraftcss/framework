@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "node ./lib/copy-normalize.js",
+    "lint": "stylelint \"**/*.scss\" --syntax scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,9 +21,13 @@
     "url": "https://github.com/kraftcss/framework/issues"
   },
   "homepage": "https://github.com/kraftcss/framework#readme",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  },
   "devDependencies": {
     "chalk": "^2.0.1",
     "fs-extra": "^3.0.1",
-    "normalize.css": "^7.0.0"
+    "stylelint": "^7.13.0",
+    "stylelint-scss": "^1.5.1"
   }
 }
