@@ -4,7 +4,7 @@
   "description": "SASS Framework",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node ./lib/postinstall.js",
+    "postinstall": "node ./lib/copy-normalize.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/kraftcss/framework#readme",
   "devDependencies": {
+    "chalk": "^2.0.1",
     "fs-extra": "^3.0.1",
     "normalize.css": "^7.0.0"
   }
