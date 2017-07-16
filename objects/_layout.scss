@@ -32,47 +32,85 @@ $kraft-layout-gutter--small:    $kraft-global-spacing-unit--small !default;
     text-align: end;
   }
 
-  // Align the layout items to the top
+  /**
+   * Align the layout items to the top
+   *
+   *  ┌───────┐  ┌───────┐  ┌───────┐
+   *  └───────┘  │       │  └───────┘
+   *             │       │
+   *             └───────┘
+   *
+   */
   &--top {
     align-items: flex-start;
   }
 
-  // Align the layout items to the middle (vertical)
+
+  /**
+   * Align the layout items to the middle (vertical)
+   *
+   *             ┌───────┐
+   *  ┌───────┐  │       │  ┌───────┐
+   *  └───────┘  │       │  └───────┘
+   *             └───────┘
+   *
+   */
   &--middle {
     align-items: center;
   }
 
-  // Align the layout items to the bottom
+  /**
+   * Align the layout items to the bottom
+   *
+   *             ┌───────┐
+   *             │       │
+   *  ┌───────┐  │       │  ┌───────┐
+   *  └───────┘  └───────┘  └───────┘
+   *
+   */
   &--bottom {
     align-items: flex-end;
   }
 
-  // Add equal horizontal space all around the layout items
+  /**
+   * Add equal horizontal space all around the layout items
+   *
+   *  │                                 │
+   *  │   ┌─────┐   ┌─────┐   ┌─────┐   │
+   *  │   └─────┘   └─────┘   └─────┘   │
+   *  │                                 │
+   *
+   */
   &--around {
     justify-content: space-around;
   }
 
-  // Add space between the layout items (not around the ends)
+  /**
+   * Add space between the layout items (not around the ends)
+   *
+   *  │                                   │
+   *  │ ┌─────┐      ┌─────┐      ┌─────┐ │
+   *  │ └─────┘      └─────┘      └─────┘ │
+   *  │                                   │
+   *
+   */
   &--between {
     justify-content: space-between;
   }
 
-  // Reverse the order of the layout items
+  /**
+   * Reverse the order of the layout items
+   *
+   *  ┌───────┐  ┌───────┐  ┌───────┐
+   *  │   3   │  │   2   │  │   1   │
+   *  └───────┘  └───────┘  └───────┘
+   *
+   */
   &--reverse {
     flex-direction: row-reverse;
   }
 }
 
-
-
-
-.o-layout--small {
-  margin-left: -$kraft-layout-gutter--small;
-
-  .o-layout__item {
-    padding-left: $kraft-layout-gutter--small;
-  }
-}
 
 
 .o-layout__item {
@@ -89,5 +127,16 @@ $kraft-layout-gutter--small:    $kraft-global-spacing-unit--small !default;
 
   &--last {
     order: 1;
+  }
+}
+
+
+
+
+.o-layout--small {
+  margin-left: -$kraft-layout-gutter--small;
+
+  .o-layout__item {
+    padding-left: $kraft-layout-gutter--small;
   }
 }
