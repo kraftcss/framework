@@ -20,17 +20,20 @@ $kraft-layout-gutter--small:    $kraft-global-spacing-unit--small !default;
     text-align: start;
   }
 
+
   // Align the layout items to the center (horizontal)
   &--center {
     justify-content: center;
     text-align: center;
   }
 
+
   // Align the layout items to the right
   &--right {
     justify-content: flex-end;
     text-align: end;
   }
+
 
   /**
    * Align the layout items to the top
@@ -59,6 +62,7 @@ $kraft-layout-gutter--small:    $kraft-global-spacing-unit--small !default;
     align-items: center;
   }
 
+
   /**
    * Align the layout items to the bottom
    *
@@ -71,6 +75,7 @@ $kraft-layout-gutter--small:    $kraft-global-spacing-unit--small !default;
   &--bottom {
     align-items: flex-end;
   }
+
 
   /**
    * Add equal horizontal space all around the layout items
@@ -85,6 +90,7 @@ $kraft-layout-gutter--small:    $kraft-global-spacing-unit--small !default;
     justify-content: space-around;
   }
 
+
   /**
    * Add space between the layout items (not around the ends)
    *
@@ -97,6 +103,7 @@ $kraft-layout-gutter--small:    $kraft-global-spacing-unit--small !default;
   &--between {
     justify-content: space-between;
   }
+
 
   /**
    * Reverse the order of the layout items
