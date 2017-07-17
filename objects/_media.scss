@@ -1,0 +1,38 @@
+
+/**
+ * ----------------------------------------------------------------------------
+ *  MEDIA
+ * ----------------------------------------------------------------------------
+ */
+
+
+.o-media {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: $kraft-global-spacing-unit;
+
+
+  &--middle {
+    align-items: center;
+  }
+}
+
+
+.o-media__img {
+  margin-right: $kraft-global-spacing-unit;
+
+  &--reverse {
+    order: 1;
+    margin-right: 0;
+    margin-left: $kraft-global-spacing-unit;
+  }
+}
+
+
+.o-media__body {
+  flex: 1 0 0;
+
+  &, & > :last-child {
+    margin-bottom: 0;
+  }
+}
