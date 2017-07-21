@@ -1,0 +1,58 @@
+
+/**
+ * ----------------------------------------------------------------------------
+ *  BUTTON
+ * ----------------------------------------------------------------------------
+ */
+
+
+
+$kraft-default-ratio: 5% !default;
+
+
+
+
+
+.c-btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font: inherit;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+  overflow: visible;
+  padding: .75rem 1.25rem;
+  text-decoration: none;
+  transition: all 50ms linear;
+  color: #fff;
+
+  @include kraft-button-states($kraft-default-color);
+
+  &--small {
+    font-size: .75rem;
+  }
+
+  &--large {
+    font-size: 1.25rem;
+  }
+}
+
+
+
+@mixin kraft-button-states($color, $ratio: $kraft-default-ratio, $prop: 'background') {
+  #{$prop}-color: $color;
+
+  &:hover {
+    #{$prop}-color: lighten($color, $ratio);
+  }
+
+  &:active {
+    #{$prop}-color: darken($color, $ratio);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    #{$prop}-color: desaturate(lighten($color, $ratio*3), $ratio*4);
+  }
+}

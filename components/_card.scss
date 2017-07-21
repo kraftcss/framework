@@ -1,0 +1,23 @@
+
+/**
+ * ----------------------------------------------------------------------------
+ *  CARD
+ * ----------------------------------------------------------------------------
+ */
+
+
+$card-background: #fff !default;
+$card-border: 1px solid #ccc !default;
+
+
+
+.c-card {
+  background: $card-background;
+  padding: $kraft-global-spacing-unit;
+  border: $card-border;
+}
+
+
+.c-card__header {
+  display: flex;
+}

@@ -1,7 +1,7 @@
 {
   "name": "kraftcss",
   "version": "0.0.1",
-  "description": "SASS Framework",
+  "description": "BEMIT SASS Framework",
   "main": "index.js",
   "scripts": {
     "postinstall": "node ./lib/copy-normalize.js",

@@ -1,0 +1,56 @@
+
+/**
+ * ----------------------------------------------------------------------------
+ *  WIDTHS
+ * ----------------------------------------------------------------------------
+ */
+
+
+$kraft-fractions: 1 2 3 4 5 !default;
+
+
+$kraft-widths-delimiter: \/ !default;
+
+
+$kraft-widths-breakpoint-separator: \@ !default;
+
+
+
+@mixin kraft-widths($columns, $breakpoint: null) {
+
+  // Loop through the number of columns for each denominator of our fractions.
+  @each $denominator in $columns {
+
+    // Begin creating a numerator for our fraction up until we hit the
+    // denominator.
+    @for $numerator from 1 through $denominator {
+
+      // Build a class in the format `.u-3/4[@<breakpoint>]`.
+      .u-#{$numerator}#{$kraft-widths-delimiter}#{$denominator}#{$breakpoint} {
+        flex: none !important;
+        width: ($numerator / $denominator) * 100% !important;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+@include kraft-widths($kraft-fractions);
+
+
+
+@if (variable-exists(mq-breakpoints)) {
+
+  @each $kraft-bp-name, $kraft-bp-value in $mq-breakpoints {
+
+    @include mq($from: $kraft-bp-name) {
+      @include kraft-widths($kraft-fractions, #{$kraft-widths-breakpoint-separator}#{$kraft-bp-name});
+    }
+
+  }
+
+}

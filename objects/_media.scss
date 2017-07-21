@@ -11,7 +11,6 @@
   align-items: flex-start;
   margin-bottom: $kraft-global-spacing-unit;
 
-
   &--middle {
     align-items: center;
   }
@@ -32,7 +31,8 @@
 .o-media__body {
   flex: 1 0 0;
 
-  &, & > :last-child {
+  &,
+  > :last-child {
     margin-bottom: 0;
   }
 }

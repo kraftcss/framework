@@ -11,8 +11,8 @@
   "rules": {
     "indentation": [2],
     "scss/at-extend-no-missing-placeholder": true,
-    "scss/at-function-pattern": "inuit-.+",
-    "scss/at-mixin-pattern": "inuit-.+",
+    "scss/at-function-pattern": "kraft-.+",
+    "scss/at-mixin-pattern": "kraft-.+",
     "scss/dollar-variable-colon-space-before": "never",
     "scss/partial-no-import": true,
     "scss/selector-no-redundant-nesting-selector": true,
@@ -98,7 +98,7 @@
     "no-missing-end-of-source-newline": true,
     "no-unknown-animations": true,
 
-    "number-leading-zero": "always",
+    "number-leading-zero": "never",
     "number-max-precision": 7,
     "number-no-trailing-zeros": true,
 
