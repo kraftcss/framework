@@ -12,6 +12,24 @@
 $kraft-default-ratio: 5% !default;
 
 
+@mixin kraft-button-states($color, $ratio: $kraft-default-ratio) {
+  background-color: $color;
+
+  &:hover {
+    background-color: lighten($color, $ratio);
+  }
+
+  &:active,
+  &:focus {
+    background-color: darken($color, $ratio);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: desaturate(lighten($color, $ratio*3), $ratio*4);
+  }
+}
+
 
 
 
@@ -37,25 +55,5 @@ $kraft-default-ratio: 5% !default;
 
   &--large {
     font-size: 1.25rem;
-  }
-}
-
-
-
-@mixin kraft-button-states($color, $ratio: $kraft-default-ratio) {
-  background-color: $color;
-
-  &:hover {
-    background-color: lighten($color, $ratio);
-  }
-
-  &:active,
-  &:focus {
-    background-color: darken($color, $ratio);
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    background-color: desaturate(lighten($color, $ratio*3), $ratio*4);
   }
 }

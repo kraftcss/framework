@@ -6,7 +6,8 @@
   "scripts": {
     "postinstall": "node ./lib/copy-normalize.js",
     "lint": "stylelint \"**/*.scss\" --syntax scss",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && npm run build",
+    "build": "node-sass example.main.scss -o dist --output-style compressed"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "chalk": "^2.0.1",
     "fs-extra": "^3.0.1",
+    "node-sass": "^4.5.3",
     "stylelint": "^7.13.0",
     "stylelint-scss": "^1.5.1"
   }
