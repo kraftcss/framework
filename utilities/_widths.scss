@@ -25,7 +25,7 @@ $kraft-widths-breakpoint-separator: \@ !default;
     @for $numerator from 1 through $denominator - 1 {
       @if ($numerator != 0) {
 
-        // Build a class in the format `.u-3/4[@<breakpoint>]`.
+        // Build a class in the format `.u-width-3/4[@<breakpoint>]`.
         .u-width-#{$numerator}#{$kraft-widths-delimiter}#{$denominator}#{$breakpoint} {
           width: ($numerator / $denominator) * 100% !important;
         }
