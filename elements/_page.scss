@@ -27,8 +27,7 @@ html {
   line-height: $kraft-global-line-height / $kraft-global-font-size; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
-  -webkit-text-size-adjust: 100%; /* [4] */
-  -ms-text-size-adjust: 100%; /* [4] */
+  text-size-adjust: 100%; /* [4] */
   -moz-osx-font-smoothing: grayscale; /* [5] */
   -webkit-font-smoothing: antialiased; /* [5] */
   font-family: $kraft-global-font-family;
