@@ -18,8 +18,7 @@
  *    navigating between pages that do/do not have enough content to produce
  *    scrollbars naturally.
  * 3. Ensure the page always fills at least the entire height of the viewport.
- * 4. Prevent certain mobile browsers from automatically zooming fonts.
- * 5. Fonts on OSX will look more consistent with other systems that do not
+ * 4. Fonts on OSX will look more consistent with other systems that do not
  *    render text using sub-pixel anti-aliasing.
  */
 html {
@@ -27,17 +26,9 @@ html {
   line-height: $kraft-global-line-height / $kraft-global-font-size; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
-  -moz-osx-font-smoothing: grayscale; /* [5] */
-  -webkit-font-smoothing: antialiased; /* [5] */
+  -moz-osx-font-smoothing: grayscale; /* [4] */
+  -webkit-font-smoothing: antialiased; /* [4] */
   font-family: $kraft-global-font-family;
   background-color: $kraft-global-background-color;
   color: $kraft-global-text-color;
 }
-
-// body {
-//
-//   ::selection {
-//     background: lighten($kraft-default-color, 10%);
-//   }
-//
-// }
