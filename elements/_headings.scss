@@ -16,8 +16,8 @@
 
 // We have all of our heading font sizes defined here. Passing these pixel
 // values into our `kraft-font-size()` mixin will generate a rem-based
-// `font-size` with a pixel fallback, as well as generating a `line-height` that
-// will sit on our baseline grid.
+// `font-size`, as well as generating a `line-height` that will sit 
+// on our baseline grid.
 
 $kraft-font-size-h1:  36px !default;
 $kraft-font-size-h2:  28px !default;
@@ -25,6 +25,17 @@ $kraft-font-size-h3:  24px !default;
 $kraft-font-size-h4:  20px !default;
 $kraft-font-size-h5:  18px !default;
 $kraft-font-size-h6:  16px !default;
+
+$kraft-heading-weight: 700 !default;
+
+
+/* stylelint-disable selector-list-comma-newline-after */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $kraft-heading-weight;
+}
+
+/* stylelint-enable selector-list-comma-newline-after */
 
 
 h1 {
