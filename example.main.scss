@@ -27,11 +27,14 @@
 // Objects
 @import 'objects/layout';
 @import 'objects/media';
+@import 'objects/ratio';
+@import 'objects/crop';
 
 
 // Components
 @import 'components/button';
 @import 'components/card';
+@import 'components/spinner';
 
 
 // Utilities

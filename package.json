@@ -2,7 +2,7 @@
   "name": "kraftcss",
   "version": "0.0.1",
   "description": "BEMIT SASS Framework",
-  "main": "index.js",
+  "main": "example.main.scss",
   "scripts": {
     "postinstall": "node ./lib/copy-normalize.js",
     "lint": "stylelint \"**/*.scss\" --syntax scss",

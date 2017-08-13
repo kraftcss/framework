@@ -9,15 +9,15 @@
 */
 
 
-$card-background: #fff !default;
-$card-border: 1px solid #ccc !default;
+$kraft-card-background: #fff !default;
+$kraft-card-border: 1px solid #ccc !default;
 
 
 
 .c-card {
-  background: $card-background;
+  background: $kraft-card-background;
   padding: $kraft-global-spacing-unit;
-  border: $card-border;
+  border: $kraft-card-border;
 }
 
 

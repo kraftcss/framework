@@ -23,3 +23,7 @@ $kraft-global-spacing-unit--tiny:     round($kraft-global-spacing-unit * .5) !de
 $kraft-global-spacing-unit--small:    round($kraft-global-spacing-unit * .75) !default;
 $kraft-global-spacing-unit--large:    round($kraft-global-spacing-unit * 1.25) !default;
 $kraft-global-spacing-unit--huge:     round($kraft-global-spacing-unit * 1.5) !default;
+
+
+$kraft-global-radius: 4px !default;
+$kraft-global-round: 999px !default;
