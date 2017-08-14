@@ -9,7 +9,6 @@
     "./test/*.scss"
   ],
   "rules": {
-    "indentation": [2],
     "scss/at-extend-no-missing-placeholder": true,
     "scss/at-function-pattern": "kraft-.+",
     "scss/at-mixin-pattern": "kraft-.+",
@@ -24,7 +23,7 @@
 
     "block-closing-brace-newline-after": "always-multi-line",
     "block-closing-brace-newline-before": "always-multi-line",
-    "block-closing-brace-space-after": "always-single-line",
+    # "block-closing-brace-space-after": "always-single-line",
     "block-closing-brace-space-before": "always-single-line",
 
     "block-no-empty": true,

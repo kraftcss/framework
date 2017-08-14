@@ -152,22 +152,17 @@
 
 
 
-.o-layout__item {
-  flex: 0 0 auto;
-  flex-grow: 1;
-  flex-basis: 0;
-  max-width: 100%;
-  padding-left: $kraft-global-spacing-unit;
+  .o-layout__item {
+    flex: 0 0 auto;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    padding-left: $kraft-global-spacing-unit;
 
 
-  &--first {
-    order: -1;
+    &--first { order: -1; }
+    &--last { order: 1; }
   }
-
-  &--last {
-    order: 1;
-  }
-}
 
 
 
