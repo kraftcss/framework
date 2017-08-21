@@ -4,10 +4,12 @@
 // Settings
 @import 'settings/core';
 @import 'settings/colors';
+@import 'settings/responsive';
 
 
 // Tools
 @import 'tools/font-size';
+@import 'node_modules/sass-mq/mq';
 
 
 // Generic

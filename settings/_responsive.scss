@@ -1,0 +1,18 @@
+
+/*
+|--------------------------------------------------------------------------
+| settings / responsive
+|--------------------------------------------------------------------------
+|
+| Breakpoints
+|
+*/
+
+// I don't care about (IE <= 8, Firefox <= 3, Opera <= 9)
+$mq-responsive: true;
+
+
+$mq-breakpoints: (
+  tablet: 740px,
+  desktop: 980px
+);
