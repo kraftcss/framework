@@ -1,21 +1,21 @@
 
- /*
- |--------------------------------------------------------------------------
- | utilities / spacings
- |--------------------------------------------------------------------------
- |
- | Utility classes to put specific spacing values onto elements. The below loop
- | will generate us a suite of classes like:
- |
- |   .u-margin-top {}
- |   .u-padding-left-large {}
- |   .u-margin-right-small {}
- |   .u-padding {}
- |   .u-padding-right-none {}
- |   .u-padding-horizontal {}
- |   .u-padding-vertical-small {}
- |
- */
+/*
+|--------------------------------------------------------------------------
+| utilities / spacings
+|--------------------------------------------------------------------------
+|
+| Utility classes to put specific spacing values onto elements. The below loop
+| will generate us a suite of classes like:
+|
+|   .u-margin-top {}
+|   .u-padding-left-large {}
+|   .u-margin-right-small {}
+|   .u-padding {}
+|   .u-padding-right-none {}
+|   .u-padding-horizontal {}
+|   .u-padding-vertical-small {}
+|
+*/
 
 
 $kraft-spacing-directions: (
