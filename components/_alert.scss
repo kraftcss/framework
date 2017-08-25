@@ -48,3 +48,28 @@ $kraft-alert-icon-background: rgba(#000, .2);
   .c-alert__icon {
     background-color: $kraft-alert-icon-background;
   }
+
+  .c-alert__close {
+    cursor: pointer;
+
+    &--top { align-self: top; }
+  }
+
+
+.c-alert--small {
+
+  .c-alert__body,
+  .c-alert__icon,
+  .c-alert__close {
+    padding: $kraft-global-spacing-unit--small;
+  }
+}
+
+.c-alert--large {
+
+  .c-alert__body,
+  .c-alert__icon,
+  .c-alert__close {
+    padding: $kraft-global-spacing-unit--large;
+  }
+}
