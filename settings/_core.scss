@@ -18,10 +18,10 @@ $kraft-global-background-color:   #eee;
 
 
 // Global spacing
-$kraft-spacing-factor--tiny:  .5 !default;
-$kraft-spacing-factor--small:  .75 !default;
-$kraft-spacing-factor--large:  1.25 !default;
-$kraft-spacing-factor--huge:  1.75 !default;
+$kraft-spacing-factor--tiny:    .5 !default;
+$kraft-spacing-factor--small:   .75 !default;
+$kraft-spacing-factor--large:   1.25 !default;
+$kraft-spacing-factor--huge:    1.75 !default;
 
 $kraft-global-spacing-unit:           round($kraft-global-line-height) !default;
 $kraft-global-spacing-unit--tiny:     round($kraft-global-spacing-unit * $kraft-spacing-factor--tiny) !default;
@@ -31,4 +31,4 @@ $kraft-global-spacing-unit--huge:     round($kraft-global-spacing-unit * $kraft-
 
 
 $kraft-global-radius: 4px !default;
-$kraft-global-round: 999px !default;
+$kraft-global-round: 9999px !default;

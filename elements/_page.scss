@@ -22,7 +22,7 @@
  *    render text using sub-pixel anti-aliasing.
  */
 html {
-  font-size: ($kraft-global-font-size / 16px) * 1em; /* [1] */
+  font-size: em($kraft-global-font-size, 16px); /* [1] */
   line-height: $kraft-global-line-height / $kraft-global-font-size; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
