@@ -1,6 +1,6 @@
 {
   "name": "@kraftcss/framework",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "BEMIT SASS Framework",
   "main": "example.main.scss",
   "scripts": {
