@@ -1,0 +1,40 @@
+
+/*
+|--------------------------------------------------------------------------
+| utilities / visibility
+|--------------------------------------------------------------------------
+*/
+
+
+/**
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.u-hidden-visually {
+  @include kraft-hidden-visually();
+}
+
+
+@mixin kraft-visiblity-utilities ($breakpoint: null) {
+  .u-hide#{$breakpoint} { display: none !important; }
+  .u-block#{$breakpoint} { display: block !important; }
+  .u-inline#{$breakpoint} { display: inline !important; }
+  .u-inline-block#{$breakpoint} { display: inline-block !important; }
+}
+
+
+@include kraft-visiblity-utilities();
+
+
+
+@if (variable-exists(mq-breakpoints)) {
+
+  @each $kraft-bp-name, $kraft-bp-value in $mq-breakpoints {
+
+    @include mq($from: $kraft-bp-name) {
+      @include kraft-visiblity-utilities(#{$kraft-breakpoint-separator}#{$kraft-bp-name});
+    }
+
+  }
+
+}

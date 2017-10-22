@@ -11,7 +11,6 @@
 
 $kraft-fractions: 2 3 4 5 !default;
 $kraft-widths-delimiter: \/ !default;
-$kraft-widths-breakpoint-separator: \@ !default;
 $kraft-widths-prefix: 'u-width-' !default;
 
 
@@ -58,7 +57,7 @@ $kraft-widths-prefix: 'u-width-' !default;
   @each $kraft-bp-name, $kraft-bp-value in $mq-breakpoints {
 
     @include mq($from: $kraft-bp-name) {
-      @include kraft-widths($kraft-fractions, #{$kraft-widths-breakpoint-separator}#{$kraft-bp-name});
+      @include kraft-widths($kraft-fractions, #{$kraft-breakpoint-separator}#{$kraft-bp-name});
     }
 
   }

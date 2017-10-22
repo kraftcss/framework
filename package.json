@@ -7,7 +7,7 @@
     "postinstall": "node ./lib/copy-normalize.js",
     "lint": "stylelint \"**/*.scss\" --syntax scss",
     "test": "npm run lint && npm run build",
-    "build": "mkdirp dist && node-sass example.main.scss --output-style compressed | postcss --no-map --use autoprefixer > dist/kraft.css"
+    "build": "mkdirp dist && node-sass example.main.scss --output-style expanded | postcss --no-map --use autoprefixer > dist/kraft.css"
   },
   "repository": {
     "type": "git",
