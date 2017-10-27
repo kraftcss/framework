@@ -1,0 +1,33 @@
+
+/*
+|--------------------------------------------------------------------------
+| tools / color
+|--------------------------------------------------------------------------
+|
+| Helpers dealing with colors.
+|
+*/
+
+
+$kraft-yiq-text-dark: #111 !default;
+$kraft-yiq-text-light: #fff !default;
+
+
+/**
+ * Color contrast helper
+ *
+ * from bootstrap https://github.com/twbs/bootstrap/blob/v4-dev/scss/_functions.scss
+ */
+@function kraft-color-yiq($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+  @if ($yiq >= 150) {
+    @return $kraft-yiq-text-dark;
+  } @else {
+    @return $kraft-yiq-text-light;
+  }
+}
