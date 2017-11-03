@@ -1,4 +1,3 @@
 node_modules/
 generic/_normalize.scss
 /dist
-*.css
